@@ -14,7 +14,6 @@ export function Game() {
 
   useEffect(() => {
     if (questions.every((question) => question.isCorrectUserAnswer)) {
-      console.log("well done");
       const confetti = lastQuestionCongrats();
 
       return () => clearInterval(confetti);
